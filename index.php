@@ -11,7 +11,7 @@
 <body>
     <header class="navbar">
         <div class="company">
-            <img class="logo" src="/images/logo/dad_logo.png" alt="">
+            <img class="logo" src="images/logo/dad_logo.png" alt="">
             <h1 class="navbar-company-name">D.A.D STUDIO</h1>
         </div>
         <nav>
