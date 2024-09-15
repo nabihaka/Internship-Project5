@@ -1,3 +1,14 @@
 <?php
-    $con = mysqli_connect("localhost","root","","project5_internship") or die("Couldn't connect");
+$servername = "localhost";
+$username = "root"; // Sesuaikan dengan username database Anda
+$password = ""; // Sesuaikan dengan password database Anda
+$dbname = "project5_internship";
+
+// Koneksi ke database
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Cek koneksi
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
 ?>
