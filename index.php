@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
+    <?php include "config.php"; ?>
+
     <header class="navbar">
         <div class="company">
             <img class="logo" src="images/logo/dad_logo.png" alt="">
@@ -100,90 +102,40 @@
         <section class="review-and-feedback">
             <h3>Pendapat Mereka Tentang <em>D.A.D STUDIO</em></h3>
             <div class="feedback">
-                <div class="feedback-container">
-                    <p class="name">Joko Purnomo</p>
-                    <p class="proffesion">Kontraktor</p>
-                    <p class="explain">
-                        Puas sekali dengan layanan D.A.D STUDIO, dari awal konsultasi sampai proses desain semua dapat terkontrol dengan baik. Desain yang diberikan minimalis, elegan, dan sesuai yang didiskusikan.
-                    </p>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-                <div class="feedback-container">
-                    <p class="name">Joko Purnomo</p>
-                    <p class="proffesion">Kontraktor</p>
-                    <p class="explain">
-                        Puas sekali dengan layanan D.A.D STUDIO, dari awal konsultasi sampai proses desain semua dapat terkontrol dengan baik. Desain yang diberikan minimalis, elegan, dan sesuai yang didiskusikan.
-                    </p>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-                <div class="feedback-container">
-                    <p class="name">Joko Purnomo</p>
-                    <p class="proffesion">Kontraktor</p>
-                    <p class="explain">
-                        Puas sekali dengan layanan D.A.D STUDIO, dari awal konsultasi sampai proses desain semua dapat terkontrol dengan baik. Desain yang diberikan minimalis, elegan, dan sesuai yang didiskusikan.
-                    </p>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-                <div class="feedback-container">
-                    <p class="name">Joko Purnomo</p>
-                    <p class="proffesion">Kontraktor</p>
-                    <p class="explain">
-                        Puas sekali dengan layanan D.A.D STUDIO, dari awal konsultasi sampai proses desain semua dapat terkontrol dengan baik. Desain yang diberikan minimalis, elegan, dan sesuai yang didiskusikan.
-                    </p>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-                <div class="feedback-container">
-                    <p class="name">Joko Purnomo</p>
-                    <p class="proffesion">Kontraktor</p>
-                    <p class="explain">
-                        Puas sekali dengan layanan D.A.D STUDIO, dari awal konsultasi sampai proses desain semua dapat terkontrol dengan baik. Desain yang diberikan minimalis, elegan, dan sesuai yang didiskusikan.
-                    </p>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
-                <div class="feedback-container">
-                    <p class="name">Joko Purnomo</p>
-                    <p class="proffesion">Kontraktor</p>
-                    <p class="explain">
-                        Puas sekali dengan layanan D.A.D STUDIO, dari awal konsultasi sampai proses desain semua dapat terkontrol dengan baik. Desain yang diberikan minimalis, elegan, dan sesuai yang didiskusikan.
-                    </p>
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                </div>
+                <?php 
+                    $sql = "SELECT * FROM feedback ORDER BY RAND()";
+                    $result = $conn->query($sql);
+                    
+                    if ($result->num_rows > 0) {
+                        // Lakukan perulangan berdasarkan jumlah data yang ingin ditampilkan
+                        for ($i = 1; $i <= 6; $i++) {
+                            if ($row = $result->fetch_assoc()) { // Mengambil data per row
+                                ?>
+                                <div class="feedback-container">
+                                    <p class="name"><?php echo $row['name']; ?></p>
+                                    <p class="proffesion"><?php echo $row['profession']; ?></p>
+                                    <p class="explain"><?php echo $row['explanation']; ?></p>
+                                    <div class="star">
+                                        <?php
+                                        // Loop untuk menampilkan bintang sesuai jumlah stars di database
+                                        for ($j = 0; $j < $row['stars']; $j++) {
+                                            echo '<i class="fa-solid fa-star"></i>';
+                                        }
+                                        ?>
+                                    </div>
+                                </div>
+                                <?php
+                            } else {
+                                // Jika data habis, hentikan perulangan
+                                break;
+                            }
+                        }
+                    } else {
+                        echo "Tidak ada feedback tersedia.";
+                    }
+                    
+                    $conn->close();
+                    ?>
             </div>
         </section>
 
@@ -257,11 +209,11 @@
 
         <div id="weather" class="weather-container">
             <p>Loading weather data...</p>
-            </div>
+        </div>
     </main>
 
     <footer>
-        <p>Contact us at: Dad183desainarsitektur@gmail.com | Phone: +62 856-4000-8464</p>
+        <p>Whatsapp: +62 856-4000-8464 | Email: Dad183desainarsitektur@gmail.com</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

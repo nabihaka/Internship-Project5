@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root"; // Sesuaikan dengan username database Anda
-$password = ""; // Sesuaikan dengan password database Anda
+$username = "root";
+$password = "";
 $dbname = "project5_internship";
 
 // Koneksi ke database
