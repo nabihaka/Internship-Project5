@@ -41,6 +41,10 @@ body {
     cursor: pointer;
 }
 
+.company a {
+    text-decoration: none;
+}
+
 .navbar-company-name {
     color: white;
     text-align: left;

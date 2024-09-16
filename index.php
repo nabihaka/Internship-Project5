@@ -22,8 +22,8 @@
 <body>
     <header class="navbar">
         <div class="company">
-            <img class="logo" src="images/logo/dad_logo.png" alt="">
-            <h1 class="navbar-company-name">D.A.D STUDIO</h1>
+            <img class="logo" src="images/logo/dad_logo.png" alt="" onclick="window.location.href='index.php#about';">
+            <a href="index.php#about"><h1 class="navbar-company-name">D.A.D STUDIO</h1></a>
         </div>
         <nav>
             <ul class="list">
