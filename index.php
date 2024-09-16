@@ -89,28 +89,68 @@
             <h3>Layanan Kami</h3>
             <div class="layanan-satu">
                 <div class="layanan">
-                    <p>Interior Ruang Kerja</p>
+                    <p class="judul-project">Interior Ruang Kerja</p>
                     <img src="images/slider/foto1.png" alt="">
+                    <div class="detail">
+                        <p><b>Waktu pengerjaan: </b>1 hari</p>
+                        <p><b>Jumlah desainer: </b>1 orang</p>
+                        <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
+                        <p><b>Ukuran (m): </b>4 x 7</p>
+                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
+                        <p><b>Harga: </b></p>
+                    </div>
                 </div>
                 <div class="layanan">
-                    <p>Interior Ruang Tamu</p>
+                    <p class="judul-project">Interior Ruang Tamu</p>
                     <img src="images/slider/foto2.png" alt="">
+                    <div class="detail">
+                        <p><b>Waktu pengerjaan: </b>1 hari</p>
+                        <p><b>Jumlah desainer: </b>1 orang</p>
+                        <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
+                        <p><b>Ukuran (m): </b>4 x 7</p>
+                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
+                        <p><b>Harga: </b></p>
+                    </div>
                 </div>
             </div>
             <div class="layanan-dua">
                 <div class="layanan">
-                    <p>Interior Dapur</p>
+                    <p class="judul-project">Interior Dapur</p>
                     <img src="images/slider/foto4.png" alt="">
+                    <div class="detail">
+                        <p><b>Waktu pengerjaan: </b>1 hari</p>
+                        <p><b>Jumlah desainer: </b>1 orang</p>
+                        <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
+                        <p><b>Ukuran (m): </b>4 x 7</p>
+                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
+                        <p><b>Harga: </b></p>
+                    </div>
                 </div>
                 <div class="layanan">
-                    <p>Interior Kamar</p>
+                    <p class="judul-project">Interior Kamar</p>
                     <img src="images/slider/foto3.png" alt="">
+                    <div class="detail">
+                        <p><b>Waktu pengerjaan: </b>1 hari</p>
+                        <p><b>Jumlah desainer: </b>1 orang</p>
+                        <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
+                        <p><b>Ukuran (m): </b>4 x 7</p>
+                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
+                        <p><b>Harga: </b></p>
+                    </div>
                 </div>
             </div>
             <div class="layanan-tiga">
                 <div class="layanan">
-                    <p>Desain 3D Eksterior</p>
+                    <p class="judul-project">Desain 3D Eksterior</p>
                     <img src="images/slider/foto5.png" alt="">
+                    <div class="detail">
+                        <p><b>Waktu pengerjaan: </b>1 hari</p>
+                        <p><b>Jumlah desainer: </b>1 orang</p>
+                        <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
+                        <p><b>Ukuran (m): </b>4 x 7</p>
+                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
+                        <p><b>Harga: </b></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -250,6 +290,32 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="questions-form" id="questions-form">
+                <h4>Ajukan Pertanyaan</h4>
+                <div class="container-questions-form">
+                    <form action="questions_proccess.php" method="POST">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" maxlength="100" required><br><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" maxlength="100" required><br><br>
+
+                        <label for="question">Pertanyaan:</label>
+                        <textarea id="question" name="question" maxlength="300" required></textarea><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div id="feedbackModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="modal-message"></p>
+                    </div>
+                </div>
+                <script>
+                    var feedbackMessage = "<?php echo $message; ?>";
+                </script>
             </div>
         </section>
     </main>
