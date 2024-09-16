@@ -86,3 +86,40 @@ if (feedbackMessage) {
     // Menampilkan modal dengan pesan
     showModal(feedbackMessage, messageType);
 }
+
+window.addEventListener('scroll', function() {
+    updateActiveLink();
+});
+
+// Jalankan saat halaman pertama kali dimuat
+window.addEventListener('DOMContentLoaded', function() {
+    updateActiveLink();
+});
+
+function updateActiveLink() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.list a');
+
+    let currentSection = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (window.pageYOffset >= (sectionTop - sectionHeight / 3)) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(currentSection)) {
+            link.classList.add('active');
+        }
+    });
+
+    // Jika tidak ada section yang terdeteksi (halaman di posisi paling atas), aktifkan About secara default
+    if (currentSection === '') {
+        document.querySelector('.list a[href="#about"]').classList.add('active');
+    }
+}

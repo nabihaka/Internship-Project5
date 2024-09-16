@@ -67,6 +67,19 @@ body {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.list a.active {
+    color: #015DB2;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.list a.active:hover {
+    color: white;
+    background-color: navy;
 }
 
 a:hover {
@@ -74,7 +87,7 @@ a:hover {
     transition: all 10ms ease-in-out;
 }
 
-.signup-button {
+/* .signup-button {
     background-color: white;
     padding: 0;
     border: 0 solid;
@@ -91,7 +104,7 @@ a:hover {
     background-color: navy;
     cursor: pointer;
     color: white;
-}
+} */
 
 /* main content */
 main {
@@ -558,10 +571,6 @@ main {
     font-size: 30px !important;
 }
 
-.questions-form {
-    /* margin: 80px 0 0 0; */
-}
-
 .questions-form h4 {
     font-size: 25px;
     margin: 0 0 30px;
@@ -630,4 +639,337 @@ footer {
     width: 100%;
     bottom: 0;
     box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Existing styles remain the same */
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 10px 60px;
+    }
+
+    .list {
+        gap: 30px;
+    }
+
+    .navbar-company-name {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .about-us {
+        padding: 60px 60px 0 60px;
+    }
+
+    .about-us h2 {
+        font-size: 35px;
+    }
+
+    .about-us p {
+        font-size: 30px;
+    }
+
+    .about-us .ruang-lingkup {
+        font-size: 18px;
+    }
+
+    .list-services {
+        gap: 100px;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .list-services ul {
+        margin-bottom: 20px;
+    }
+
+    .container-swipper {
+        padding: 0 30px;
+    }
+
+    .swiper {
+        width: 800px;
+        height: 450px;
+    }
+
+    .maps iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .maps h4 {
+        font-size: 22px;
+    }
+
+    .weather-container p {
+        font-size: 14px;
+    }
+
+    .about-us button {
+        width: 180px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .services {
+        padding: 20px 0;
+    }
+
+    .services h3 {
+        font-size: 30px;
+    }
+
+    .layanan-satu, .layanan-dua {
+        flex-direction: column;
+        margin: 40px 20px;
+    }
+
+    .layanan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .layanan img {
+        width: 100%;
+    }
+
+    .detail p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company {
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .list {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .list li {
+        margin: 10px 0;
+    }
+
+    .list a {
+        display: block;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 100px 0 0 0;
+    }
+
+    .about-us {
+        padding: 40px 20px 0 20px;
+    }
+
+    .about-us h2 {
+        font-size: 28px;
+        margin: 180px 0 0 0;
+    }
+
+    .about-us p {
+        font-size: 24px;
+    }
+
+    .about-us .ruang-lingkup {
+        font-size: 16px;
+    }
+
+    .list-services {
+        gap: 50px;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .list-services ul {
+        margin-bottom: 15px;
+    }
+
+    .container-swipper {
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 350px;
+    }
+
+    .swiper-slide {
+        padding: 20px;
+    }
+
+    .maps {
+        margin: 40px 0;
+    }
+
+    .maps iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .maps h4 {
+        font-size: 20px;
+    }
+
+    .weather-container p {
+        font-size: 13px;
+    }
+
+    .about-us button {
+        width: 160px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 20px 0;
+        margin: 40px 0;
+    }
+
+    .services h3 {
+        font-size: 25px;
+    }
+
+    .layanan-satu, .layanan-dua {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    .layanan {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .layanan img {
+        width: 100%;
+    }
+
+    .detail p {
+        font-size: 13px;
+    }
+
+    .layanan-tiga {
+        margin: 20px 10px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-company-name {
+        font-size: 18px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .list a {
+        font-size: 14px;
+    }
+
+    .about-us {
+        padding: 20px 10px 0 10px;
+    }
+
+    .about-us h2 {
+        font-size: 22px;
+    }
+
+    .about-us p {
+        font-size: 20px;
+    }
+
+    .about-us .ruang-lingkup {
+        font-size: 14px;
+    }
+
+    .list-services {
+        gap: 30px;
+        flex-direction: column;
+        font-size: 16px;
+    }
+
+    .list-services ul {
+        margin-bottom: 10px;
+    }
+
+    .swiper {
+        height: 250px;
+    }
+
+    .swiper-slide {
+        padding: 10px;
+    }
+
+    .maps {
+        margin: 20px 0;
+    }
+
+    .maps iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .maps h4 {
+        font-size: 18px;
+    }
+
+    .weather-container p {
+        font-size: 12px;
+    }
+
+    .about-us button {
+        width: 140px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .services {
+        padding: 10px 0;
+        margin: 20px 0;
+    }
+
+    .services h3 {
+        font-size: 20px;
+    }
+
+    .layanan-satu, .layanan-dua {
+        flex-direction: column;
+        margin: 10px 5px;
+    }
+
+    .layanan {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .layanan img {
+        width: 100%;
+        height: auto;
+    }
+
+    .detail p {
+        font-size: 12px;
+    }
+
+    .layanan-tiga {
+        margin: 10px 5px;
+        flex-direction: column;
+    }
 }
