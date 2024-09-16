@@ -81,8 +81,8 @@
                     <p>Loading weather data...</p>
                 </div>
             </div>
-            <p class="more-information">Ingin menanyakan informasi lebih lanjut?</p>
-            <button onclick="redirectToLink()"><i class="fa-brands fa-whatsapp"></i>  Hubungi Kami!</button>
+            <p class="more-information">Ingin bertanya dengan respon cepat?</p>
+            <button onclick="redirectToLink()"><i class="fa-brands fa-whatsapp"></i>  Whatsapp</button>
         </section>
 
         <section class="services" id="services">
