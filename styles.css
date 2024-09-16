@@ -771,6 +771,43 @@ footer {
     .feedback-container .fa-star {
         font-size: 20px;
     }
+
+    .feedback-form-container {
+        margin: 30px 50px;
+    }
+
+    .feedback-form-container input[type="submit"] {
+        margin: 0 50px;
+    }
+
+    .modal-content {
+        width: 70%; /* Kurangi lebar modal untuk layar lebih kecil */
+        margin: 10% auto; /* Sesuaikan margin */
+    }
+
+    .modal .close {
+        font-size: 1.4em; /* Sesuaikan ukuran font tombol tutup */
+    }
+
+    .modal-message {
+        font-size: 1.1em; /* Sesuaikan ukuran font pesan */
+    }
+
+    .contact-all-container {
+        margin: 0px 80px 80px 80px; /* Kurangi margin */
+    }
+
+    .contact h3 {
+        font-size: 30px; /* Sesuaikan ukuran font */
+    }
+
+    .container-questions-form {
+        margin: 30px 150px 0 150px; /* Kurangi margin untuk layar lebih kecil */
+    }
+
+    .questions-form h4 {
+        font-size: 22px; /* Sesuaikan ukuran font heading */
+    }
 }
 
 @media (max-width: 768px) {
@@ -932,6 +969,57 @@ footer {
     .feedback-container .fa-star {
         font-size: 18px;
     }
+
+    .feedback-form-container {
+        margin: 30px 20px;
+        padding: 20px;
+    }
+
+    .feedback-form-container input[type="submit"] {
+        margin: 0 20px;
+    }
+
+    .feedback-form-container textarea {
+        height: 60px;
+    }
+
+    .modal-content {
+        width: 95%; /* Lebar modal lebih besar pada layar kecil */
+        margin: 10% auto; /* Margin atas dan bawah lebih besar */
+    }
+
+    .modal .close {
+        font-size: 1.2em; /* Ukuran font tombol tutup lebih kecil */
+    }
+
+    .modal-message {
+        font-size: 0.9em; /* Ukuran font pesan lebih kecil */
+    }
+
+    .contact-all-container {
+        margin: 0px 40px 60px 40px; /* Lebih sempit pada layar lebih kecil */
+    }
+
+    .contact h3 {
+        font-size: 28px; /* Ukuran font lebih kecil */
+    }
+
+    .contact-text {
+        margin-top: 40px; /* Sesuaikan margin */
+    }
+
+    .container-questions-form {
+        margin: 30px 80px 0 80px; /* Lebih sempit pada layar lebih kecil */
+        padding: 20px;
+    }
+
+    .questions-form h4 {
+        font-size: 20px;
+    }
+
+    .container-questions-form input[type="submit"] {
+        margin: 0 50px; /* Kurangi margin untuk tombol submit */
+    }
 }
 
 @media (max-width: 480px) {
@@ -1063,5 +1151,73 @@ footer {
 
     .feedback-container .fa-star {
         font-size: 15px;
+    }
+
+    .feedback-form-container {
+        margin: 30px 10px;
+        padding: 15px;
+    }
+
+    .feedback-form-container input[type="submit"] {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .feedback-form-container textarea {
+        height: 50px;
+    }
+
+    .modal-content {
+        width: 100%; /* Lebar modal penuh pada layar sangat kecil */
+        margin: 20% auto; /* Margin lebih besar pada layar sangat kecil */
+        padding: 15px; /* Padding lebih kecil pada layar sangat kecil */
+    }
+
+    .modal .close {
+        font-size: 1em; /* Ukuran font tombol tutup lebih kecil */
+    }
+
+    .modal-message {
+        font-size: 0.8em; /* Ukuran font pesan lebih kecil */
+    }
+
+    .contact-all-container {
+        margin: 0px 20px 40px 20px; /* Sesuaikan margin untuk layar sangat kecil */
+        padding: 15px; /* Kurangi padding untuk layar kecil */
+    }
+
+    .contact h3 {
+        font-size: 24px; /* Ukuran font lebih kecil untuk layar kecil */
+    }
+
+    .contact-text {
+        margin-top: 30px;
+    }
+
+    .contact {
+        padding: 60px 0; /* Kurangi padding di sekitar section contact */
+    }
+
+    .container-questions-form {
+        margin: 20px 20px 0 20px; /* Margin lebih kecil untuk layar sangat kecil */
+        padding: 15px;
+    }
+
+    .questions-form h4 {
+        font-size: 18px; /* Ukuran font lebih kecil */
+    }
+
+    .container-questions-form label {
+        font-size: 14px; /* Kurangi ukuran font label */
+    }
+
+    .container-questions-form input[type="text"], 
+    .container-questions-form input[type="email"], 
+    .container-questions-form textarea {
+        font-size: 14px; /* Sesuaikan ukuran font untuk input */
+    }
+
+    .container-questions-form input[type="submit"] {
+        margin: 0 30px; /* Margin tombol lebih kecil */
     }
 }
