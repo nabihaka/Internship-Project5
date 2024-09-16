@@ -1,3 +1,14 @@
+<?php 
+    session_start();
+    include "config.php";
+    // Memeriksa jika ada pesan dari proses feedback
+    $message = '';
+    if (isset($_SESSION['feedback_message'])) {
+        $message = $_SESSION['feedback_message'];
+        unset($_SESSION['feedback_message']);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +20,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-    <?php include "config.php"; ?>
-
     <header class="navbar">
         <div class="company">
             <img class="logo" src="images/logo/dad_logo.png" alt="">
@@ -136,6 +145,31 @@
                     
                     $conn->close();
                     ?>
+            </div>
+            <div class="feedback-form" id="feedback-form">
+                <h4><em>Anda Juga Bisa Menyalurkan Pendapat Anda</em></h4>
+                <div class="feedback-form-container">
+                    <form action="feedback_proccess.php" method="POST">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" maxlength="100" required><br><br>
+
+                        <label for="profession">Profesi:</label>
+                        <input type="text" id="profession" name="profession" maxlength="30" required><br><br>
+
+                        <label for="explanation">Pendapat:</label>
+                        <textarea id="explanation" name="explanation" maxlength="300" required></textarea><br><br>
+
+                        <label for="stars">Rating Bintang (1-5):</label>
+                        <input type="number" id="stars" name="stars" min="1" max="5" required><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                    <?php if ($message): ?>
+                    <div class="message <?php echo strpos($message, 'berhasil') !== false ? 'success' : ''; ?>">
+                        <?php echo $message; ?>
+                    </div>
+                    <?php endif; ?>
+                </div>
             </div>
         </section>
 
