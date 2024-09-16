@@ -1,5 +1,5 @@
 function redirectToLink() {
-    window.location.href = "https://wa.me/+6285640008464";
+    window.location.href = "https://wa.me/+6285714129261";
 }
 
 const swiper = new Swiper('.swiper', {
@@ -53,3 +53,36 @@ fetch(apiUrl)
     console.error('Error fetching weather data:', error);
     document.getElementById('weather').innerText = 'Error loading weather data. Please try again later.';
 });
+
+// Mendapatkan elemen modal dan konten dalam modal
+var modal = document.getElementById("feedbackModal");
+var modalMessage = document.querySelector(".modal-message");
+var closeModal = document.querySelector(".close");
+
+// Fungsi untuk menampilkan modal
+function showModal(message, type) {
+    modalMessage.textContent = message;
+    modalMessage.classList.add(type);
+    modal.style.display = "block";
+}
+
+// Fungsi untuk menutup modal
+closeModal.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Menutup modal jika pengguna mengklik di luar modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Mengecek apakah ada pesan feedback dari PHP
+if (feedbackMessage) {
+    // Menentukan tipe pesan (success atau error) berdasarkan isi pesan
+    var messageType = feedbackMessage.includes("berhasil") ? "success" : "error";
+    
+    // Menampilkan modal dengan pesan
+    showModal(feedbackMessage, messageType);
+}
