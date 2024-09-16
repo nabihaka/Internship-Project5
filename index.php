@@ -97,20 +97,20 @@
                         <p><b>Jumlah desainer: </b>1 orang</p>
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>4 x 7</p>
-                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
-                        <p><b>Harga: </b></p>
+                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional membawa suasana tenang di dalamnya</p>
+                        <p><b>Harga: </b>Rp 600.000</p>
                     </div>
                 </div>
                 <div class="layanan">
                     <p class="judul-project">Interior Ruang Tamu</p>
                     <img src="images/slider/foto2.png" alt="">
                     <div class="detail">
-                        <p><b>Waktu pengerjaan: </b>1 hari</p>
+                        <p><b>Waktu pengerjaan: </b>2 hari</p>
                         <p><b>Jumlah desainer: </b>1 orang</p>
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
-                        <p><b>Ukuran (m): </b>4 x 7</p>
-                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
-                        <p><b>Harga: </b></p>
+                        <p><b>Ukuran (m): </b>6 x 7</p>
+                        <p><b>Deskripsi: </b>Desain ruang tamu mewah, minimalis, dengan perpaduan warna yang tidak mencolok sehingga tidak terkesan panas dan ramai</p>
+                        <p><b>Harga: </b>Rp 600.000</p>
                     </div>
                 </div>
             </div>
@@ -123,8 +123,8 @@
                         <p><b>Jumlah desainer: </b>1 orang</p>
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>4 x 7</p>
-                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
-                        <p><b>Harga: </b></p>
+                        <p><b>Deskripsi: </b>Desain dapur minimalis modern dengan konstruksi mezanine baja konvensional.</p>
+                        <p><b>Harga: </b>Rp 600.000</p>
                     </div>
                 </div>
                 <div class="layanan">
@@ -135,8 +135,8 @@
                         <p><b>Jumlah desainer: </b>1 orang</p>
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>4 x 7</p>
-                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
-                        <p><b>Harga: </b></p>
+                        <p><b>Deskripsi: </b>Desain kamar minimalis modern dengan konstruksi mezanine baja konvensional.</p>
+                        <p><b>Harga: </b>Rp 600.000</p>
                     </div>
                 </div>
             </div>
@@ -149,8 +149,8 @@
                         <p><b>Jumlah desainer: </b>1 orang</p>
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>4 x 7</p>
-                        <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional.</p>
-                        <p><b>Harga: </b></p>
+                        <p><b>Deskripsi: </b>Desain 3D Eksterior minimalis modern dengan konstruksi mezanine baja konvensional.</p>
+                        <p><b>Harga: </b>Rp 600.000</p>
                     </div>
                 </div>
             </div>
