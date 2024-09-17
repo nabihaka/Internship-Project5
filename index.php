@@ -29,7 +29,6 @@
             <ul class="list">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#review">Review</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <!-- <li><a href="#Sign In">Sign In</a></li>
                 <li><button class="signup-button">Sign Up</button></li> -->
@@ -156,7 +155,7 @@
             </div>
         </section>
 
-        <section class="review-and-feedback" id="review">
+        <section class="review-and-feedback" id="services">
             <h3>Pendapat Mereka Tentang <em>D.A.D STUDIO</em></h3>
             <div class="feedback">
                 <?php 
