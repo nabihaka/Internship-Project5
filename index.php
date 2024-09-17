@@ -98,7 +98,7 @@
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>4 x 7</p>
                         <p><b>Deskripsi: </b>Desain ruang kerja minimalis modern dengan konstruksi mezanine baja konvensional membawa suasana tenang di dalamnya</p>
-                        <p><b>Harga: </b>Rp 600.000</p>
+                        <p><b>Harga: </b>Rp 600.000,00</p>
                     </div>
                 </div>
                 <div class="layanan">
@@ -110,7 +110,7 @@
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>6 x 7</p>
                         <p><b>Deskripsi: </b>Desain ruang tamu mewah, minimalis, dengan perpaduan warna yang tidak mencolok sehingga tidak terkesan panas dan ramai</p>
-                        <p><b>Harga: </b>Rp 600.000</p>
+                        <p><b>Harga: </b>Rp 600.000,00</p>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>4 x 7</p>
                         <p><b>Deskripsi: </b>Desain dapur minimalis modern dengan konstruksi mezanine baja konvensional.</p>
-                        <p><b>Harga: </b>Rp 600.000</p>
+                        <p><b>Harga: </b>Rp 600.000,00</p>
                     </div>
                 </div>
                 <div class="layanan">
@@ -136,7 +136,7 @@
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>4 x 7</p>
                         <p><b>Deskripsi: </b>Desain kamar minimalis modern dengan konstruksi mezanine baja konvensional.</p>
-                        <p><b>Harga: </b>Rp 600.000</p>
+                        <p><b>Harga: </b>Rp 600.000,00</p>
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                         <p><b>Tools: </b>Sketchup 3D finishing lumion</p>
                         <p><b>Ukuran (m): </b>4 x 7</p>
                         <p><b>Deskripsi: </b>Desain 3D Eksterior minimalis modern dengan konstruksi mezanine baja konvensional.</p>
-                        <p><b>Harga: </b>Rp 600.000</p>
+                        <p><b>Harga: </b>Rp 600.000,00</p>
                     </div>
                 </div>
             </div>
